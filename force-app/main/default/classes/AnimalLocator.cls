@@ -15,7 +15,7 @@ public class AnimalLocator
         // If the request is successful, parse the JSON response.
         if (response.getStatusCode() == 200) 
         {
-            // Deserializes the JSON string into collections of primitive data types.
+            //  Deserializes the JSON string into collections of primitive data types.
            Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
             // Cast the values in the 'animals' key as a list
            Map<string,object> animals = (map<string,object>) results.get('animal');
